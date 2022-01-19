@@ -18,5 +18,11 @@ public class CatalogBrandEntityTypeConfiguration
         builder.Property(cb => cb.Brand)
             .IsRequired()
             .HasMaxLength(100);
+
+        builder.HasData(
+            new CatalogBrand { Id = 1, Brand = "brand1" },
+            new CatalogBrand { Id = 2, Brand = "brand2" },
+            new CatalogBrand { Id = 3, Brand = "brand3" },
+            new CatalogBrand { Id = 4, Brand = "brand4" });
     }
 }
