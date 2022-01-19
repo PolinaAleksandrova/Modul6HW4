@@ -61,7 +61,7 @@ public class CatalogService : ICatalogService
             }
         };
 
-        return list;
+        return result;
     }
 
     public async Task<IEnumerable<SelectListItem>> GetTypes()
@@ -82,6 +82,6 @@ public class CatalogService : ICatalogService
             }
         };
 
-        return list;
+        return result;
     }
 }
